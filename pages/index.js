@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Sidebar from "../components/Sidebar";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className="">
             <Head>
                 <title>Twitter Clone</title>
                 <meta
@@ -14,7 +13,13 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h1 className="text-4xl font-bold underline">Hello world!</h1>
+            <main className="flex min-h-screen max-w-7xl mx-auto ">
+                {/*  Sidebar */}
+                <Sidebar></Sidebar>
+                {/*  Feed */}
+                {/*  Widgets */}
+                {/*  Modal */}
+            </main>
         </div>
     );
 }
